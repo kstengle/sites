@@ -1,0 +1,56 @@
+﻿.topBox 
+{border: 1px solid #525252;
+ padding: 15px;
+ margin: 15px 0}
+    .topBox h5 
+    {margin: 0;
+     font-size: 14px;
+     font-weight: normal}
+    .topBox a, .uploadButton 
+    {border: 1px solid #525252;
+     padding: 10px 15px;
+     color: #525252;
+     margin-top: 17px;
+     text-decoration: none !important;
+     display: inline-block}
+    .topBox hr 
+    {height: 1px;
+     border: 0;
+     background: #525252}
+    .topBox label 
+    {vertical-align: middle;
+     margin-right: 10px}
+input[type="checkbox"] 
+{vertical-align: middle;
+ margin-right: 5px}
+input[type="text"] {width: 90%}
+.cell 
+{float:left;
+ width: 25%;
+ margin-right: 10px}
+    .cell p 
+    {font-weight: bold;
+     margin: 0 0 5px 0}
+.subject 
+{clear: left;
+ width: 40%;
+ margin-top: -5px}
+.startDate input[type="text"], .endDate input[type="text"] {width: 70%}
+.startDate {margin-bottom: 5px}
+.frmDateBox, .ui-datepicker-trigger {vertical-align: middle}
+.ui-datepicker-trigger {margin-left: 5px}
+#ui-datepicker-div 
+{background: #fff;
+ border: 1px solid #525252}
+
+.multiuploadInfoRow {margin-bottom: 5px}
+.multiuploadInfoRow label 
+{width: 120px;
+ display: inline-block}
+.multiuploadInfoRow input[type="text"] {width: 200px}
+.multiuploadInfoRow .frmDateBox 
+{width: 180px !important;
+ margin-left: -3px}
+.multiuploadInfoRow select 
+{width: 204px; 
+ margin-left: -3px}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="/bower_components/jquery/dist/jquery.js" type="text/javascript"></script>    
+    <script>
+        
+
+        $(document).ready(function () {
+           $('iframe#matterport').on('load', function() {
+                var iframe = $("iframe");
+                alert($(iframe.contents()));
+         //   alert('kevin');
+            iframe.find("a").click(function () {
+                alert('click');
+            });
+            });
+            //$("a").click(function (e) {
+            //    var url = $(this).attr('href');
+            //    if (url.indexOf('http://www.timmyjimmy.com?') > -1)
+            //    {
+            //        e.preventDefault();
+            //        var upc = url.replace('http://www.timmyjimmy.com?upc=', '');
+            //        $.ajax({
+            //            url: "AnchorTextServerCode.aspx?upc=" + upc, success: function (result) {
+            //                $("#cart").html(result);
+            //            }
+            //        });                    
+            //    } else {
+            //        alert('clicked no action');
+            //    }
+            //});
+       });
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href="http://www.timmyjimmy.com?upc=123">Product 123</a></li>
+        <li><a href="http://www.google.com">Link to google</a></li>
+        <li><a href="http://www.timmyjimmy.com?upc=abc">Product ABC</a></li>
+        <li><a href="http://www.1over0.com?upc=abc">Load frame</a></li>
+    </ul>
+
+    <iframe width='853' height='480' src='https://my.matterport.com/show/?m=rVZukggqjdn' frameborder='0' allowfullscreen id="matterport"></iframe>
+    <span id="cart"></span>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.calToday{
+	color: white;
+	font-size: 11px;
+}
+.calToday:link {
+	color: #FFCCCC;
+	text-decoration: none;
+}
+.calToday:visited {
+	color: #FFFFCC;
+	text-decoration: none;
+}
+.calToday:hover {
+	color: #FFFFCC;
+	text-decoration: none;
+}
+.calToday:active {
+	color: #FFFFCC;
+	text-decoration: none;
+}
+.days
+{
+	font-family: verdana;
+	font-size: 10px;
+}
+.weekTr
+{
+	background-color:#EDEDED;
+}
+.calHeader
+{
+	background-color: #7A90CC;
+}
+#smart_mainCalTbl, #smart_spanLeft, #smart_spanRight, #smart_spanMonth, #smart_spanYear
+{
+	font-family: tahoma, verdana ;
+	font-size: 11px;
+}
+#smart_spanMonth, #smart_spanYear{
+	color: #FFFFFF;
+}
+.selectedTxt{
+	color: blue;
+}

@@ -1,0 +1,1585 @@
+/* ASLA > LA CES Css file */
+/* Page body general formatting */
+
+
+/* General hyperlink formatting */
+a {
+color: #1876CC;
+cursor: pointer;
+font-weight: bold;
+text-decoration: none;
+}
+/* General hyperlink on hover formatting */
+a:hover {
+    color: #1876CC;
+    /*text-decoration: underline;*/
+}
+.smalllinktext {
+color: #1876CC;
+cursor: pointer;
+font-weight: bold;
+text-decoration: none;
+font-size: 11px;
+}
+/* General hyperlink on hover formatting */
+.smalllinktext:hover {
+    color: #1876CC;
+    /*text-decoration: underline;*/
+}
+
+li {
+font-size: 16px;
+line-height: 20px;
+}
+.paddingLeft175 {
+    padding-left: 175px;
+}
+
+
+
+/* Increases character spacing. Using in footer */
+.strechTxt {
+    padding: 10px;
+}
+/* Input field class */
+.frmMainSearch {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    font-size: 11px;
+    margin: 0px 0px 10px 0px;
+    line-height: 13px;
+    border: 1px solid #999999;
+}
+/* Increases character spacing with large font size. Using in footer */
+.strechTxtLrg {
+    text-align: right;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+/* Text with maroon color and bold weight */
+.maroonTxtBold {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0e0f76;
+}
+/* Date input field formatting */
+.frmDateBox {
+    width: 110px;
+    font-size: 11px;
+    padding: 0px;
+    border: 1px solid #999999;
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #525252;
+}
+
+/* Input field formatting with large width used in Find Participant. */
+.frmBigTextBox {
+    width: 190px;
+    padding: 0px;
+    border: 1px solid #999999;
+}
+/* Input field formatting with small width used in Find Participant. */
+.frmSmallTextBox {
+    width: 90px;
+    padding: 0px;
+    border: 1px solid #999999;
+}
+/* Drop down and Text area formatting for Course Details page */
+.frmTextArea {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    font-size: 11px;
+    padding: 2px;
+    border: 1px solid #999999;
+    color: #525252;
+}
+/* Text formatting used in TD,DIV */
+.participantList {
+    font-size: 11px;
+    padding: 2px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+/*----------*/
+/* Hyperlink formatting with Maroon background */
+.maroonBg, .maroonBg:link, .maroonBg:hover {
+    color: #FFFFFF;
+    background-color: #0e0f76;
+}
+/* Site header */
+.header {
+    background-image: url(../images/head_back.jpg);
+    background-repeat: repeat-x;
+}
+/* Site Footer */
+
+/* Class for right panel */
+.defRgtPane {
+    width: 50%;    
+}
+#rgtPane{
+ border-left: 1px solid rgba(24, 118, 204, 0.2);
+ padding-left: 20px; 
+}
+/* Class for right panel with more width */
+.wideRgtPane {
+    width: 70%;
+}
+/* Right align formatting*/
+.alignRgt {
+    text-align: right;
+}
+/* Page body width */
+.mainWidth {
+    max-width: 1000px;
+}
+
+/* Button container class */
+.buttonContainer {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+    /* Button container input class */
+    .buttonContainer input {
+        border: 0px;
+    }
+/* Left side of a button class */
+.btnLft {
+    background-image: url(../images/button_left.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 9px;
+    height: 28px;
+}
+/* Right side of a button class */
+.btnRgt {
+    background-image: url(../images/button_right.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 9px;
+    height: 28px;
+}
+/* Middle of a button class */
+.btnRepeat {
+    background-image: url(../images/button_back.gif);
+    background-repeat: repeat-x;
+    background-position: left;
+    height: 28px;
+    cursor: pointer;
+    font-family: Verdana,Georgia,Times New Roman,Times,serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0e0f76;
+}
+    /* Button hyperlink class */
+    .btnRepeat a {
+        text-decoration: none;
+        color: #0e0f76 !important;
+    }
+
+        .btnRepeat a:visited {
+            text-decoration: none;
+            color: #0e0f76;
+        }
+/*Using for noscript alert*/
+#theLayer {
+    position: absolute;
+    width: 450px;
+    left: 260px;
+    top: 80px;
+    height: 350px;
+    visibility: hidden;
+    z-index: 50000;
+    border: 1px solid #666666;
+    padding: 5px;
+    color: #FF0000;
+    line-height: 2;
+}
+
+#theLayer1 {
+    visibility: hidden;
+    border: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+/*Begin Matin */
+/*Left Pane width 50%*/
+
+/*Right Pane width 50%*/
+.rightPane50 {
+    width: 51%;
+    text-align: left;
+}
+/*Left Pane width 75%*/
+.leftPane75 {
+    width: 74%;
+    text-align: right;
+}
+/*Right Pane width 25%*/
+.rightPane25 {
+    width: 25%;
+    text-align: left;
+}
+
+/*Style for Header/Title of page*/
+
+/*Style for DataList*/
+.padding10 {
+    padding: 10px;
+}
+
+/*Style for All buttons that are common*/
+
+/*extra Style for button btn64*/
+.btn64 {
+    width: 64px;
+    background: url(../images/buttons/button64.gif) no-repeat center top;
+}
+
+/*extra Style for button btn74*/
+.btn74 {
+    width: 74px;
+    background: url(../images/buttons/button74.gif) no-repeat center top;
+}
+
+/*extra Style for button btn84*/
+.btn84 {
+    width: 84px;
+    background: url(../images/buttons/button84.gif) no-repeat center top;
+}
+/*extra Style for button btn105*/
+.btn105 {
+    width: 105px;
+    background: url(../images/buttons/button105.gif) no-repeat center top;
+}
+/*extra Style for button btn107*/
+.btn107 {
+    width: 107px;
+    background: url(../images/buttons/button107.gif) no-repeat center top;
+}
+/*extra Style for button btn133*/
+.btn133 {
+    width: 133px;
+    background: url(../images/buttons/button133.gif) no-repeat center top;
+}
+/*extra Style for button btn153*/
+.btn153 {
+    width: 153px;
+    background: url(../images/buttons/button153.gif) no-repeat center top;
+}
+/*extra Style for button btn163*/
+.btn163 {
+    width: 163px;
+    background: url(../images/buttons/button163.gif) no-repeat center top;
+}
+/*extra Style for button btn194*/
+.btn194 {
+    width: 194px;
+    background: url(../images/buttons/button194.gif) no-repeat center top;
+}
+/*extra Style for button btn204*/
+.btn204 {
+    width: 204px;
+    background: url(../images/buttons/button204.gif) no-repeat center top;
+}
+/*extra Style for button btn232*/
+.btn232 {
+    width: 232px;
+    background: url(../images/buttons/button232.gif) no-repeat center top;
+}
+
+a.btn204 {
+    display: block;
+    height: 28px;
+    padding-top: 8px;
+    text-align: center;
+    color: #4B4B4B;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+/*extra Style for button btn240*/
+.btn240 {
+    width: 240px;
+    background: url(../images/buttons/button240.gif) no-repeat center top;
+}
+
+
+/*Style for loggedin Name display*/
+.loggedIn {
+    font-size: 12px;
+    padding: 0px 10px 5px 10px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    width: 200px;
+}
+/*Style to display message in error div*/
+.errorDiv {
+    color: #FF0000;
+    padding-right: 10px;
+}
+/*display bold date*/
+.dateBold {
+    font-weight: bold;
+}
+/*Style to display list header td*/
+.tdListHeader {
+    background-color: #0e0f76;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+    /* List header hyperlink formatting */
+    .tdListHeader a, .tdListHeader a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+/*Style to display list item td*/
+.tdListItem {
+    text-align: left;
+}
+/*Style to display small text*/
+
+/*Style to display paging row*/
+.pagingRow {
+    padding-top: 20px;
+}
+
+.dvParticipantList {
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*End Matin */
+
+/*Begin Bashar */
+/* Label Style */
+.LoginLabel {
+    padding: 5px;
+    line-height: 15px;
+    float:left;
+
+}
+
+/* Normal label Text*/
+.NormalText {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    font-size: 11px;
+    padding: 10px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+/*Provider Header Text*/
+.ProviderHeader {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    text-align: right;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px;
+    width: 320px;
+}
+
+/* Header Text*/
+.HeaderText {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    /*text-align: right;*/
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+/*Button Style*/
+.loginButton {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0e0f76;
+}
+
+/* Text field Style */
+.LoginTextBox {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    padding: 0px;
+    border: 1px solid #999999;
+    width: 180px;
+}
+
+/* Text field Style */
+.InputFieldStyle {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    font-size: 14px;
+    padding: 0px;
+    line-height: normal;
+    border: 1px solid #999999;
+    width: 80%;
+}
+
+/*error  summary formay*/
+.ErrorSummery {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: Red;
+}
+
+    /* error summary listing style*/
+    .ErrorSummery ul {
+        list-style-type: disc;
+        text-align: left;
+        padding-top: 5px;
+    }
+/*End Bashar */
+
+/*Begin Wasim */
+/* Title header */
+.dvHeader {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    /*text-align: right;*/
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+/* Form input field class */
+.frmElement {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+/* Course type div class */
+#dvCourseType {
+    width: 335px;
+    margin-top: -40px;
+}
+    /* Course type table and td class */
+    #dvCourseType table td {
+        font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+        color: #333333;
+        font-size: 12px;
+        padding: 10px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+    }
+    /* Course type hyperlink class */
+    #dvCourseType a {
+        font-size: 12px;
+    }
+
+.top {
+    vertical-align: top;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+/*End Wasim */
+
+/* Start Hira */
+/* Provider details input field class */
+.frmProviderDetailsTextBox {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    font-size: 12px;
+    padding: 2px;
+    line-height: normal;
+    border: 1px solid #999999;
+    width: 190px;
+}
+/* Status radio button class used in provider */
+.statusRadioButton {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif !important;
+    color: #333333;
+    font-size: 12px !important;
+    line-height: normal;
+    border: 1px solid #999999;
+    border-right: #999999 1px;
+    border-top: #999999 1px;
+    border-left: #999999 1px;
+    border-bottom: #999999 1px;
+}
+
+
+/* Start AdminManageManageParticipants Page */
+.tblManageParticipants {
+    /*color: #FFFFFF;*/
+    background-color: #cccccc;
+    font-size: 12px;
+    padding: 1px;
+    letter-spacing: 0.5px;
+}
+
+    .tblManageParticipants h4 {
+        margin: 0px;
+    }
+
+/* Participant hyperlink class used in participant result page */
+/*.tblManageParticipants:link {
+	color: #FFFFFF;
+	background-color: #0e0f76;
+}
+.tblManageParticipants:visited {
+	color: #FFFFFF;
+	background-color: #0e0f76;
+}
+.tblManageParticipants:hover {
+	color: #FFFFFF;
+	background-color: #0e0f76;
+}*/
+/* Code type drop down class used in edit participant page */
+.frmMPTextBox {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    font-size: 14px;
+    padding: 0px;
+    line-height: normal;
+    border: 1px solid #999999;
+    width: 105px;
+}
+/* TD class used in edit participant page */
+.tblMPtd {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+/* End AdminManageManageParticipants Page */
+
+/* End Hira */
+
+/* Start Tarek */
+/* Div with fixed 200px width */
+Div.reqCodeTxt {
+    width: 200px;
+}
+/* End Tarek */
+
+
+/* Added by HIRA for some Enhancement Start */
+.footerDIV {
+    padding-top: 60px;
+}
+
+.footerMargin {
+    margin-top: -60px;
+}
+
+.strechTxtNew {
+    padding: 0px 10px;
+}
+
+.footerFontSmaller {
+    font-size: 11px !important;
+}
+
+.VisitorStrechTxt {
+    padding: 12px 16px 0px 0px;
+}
+.VisitorStrechTxt a {
+
+    font-weight: bold;
+}
+
+.leftAlign {
+    text-align: left !important;
+}
+
+.LeftAlignTable {
+    text-align: left;
+    vertical-align: top;
+    border: 0px;
+}
+
+.CheckboxList2 {
+    text-align: left;
+}
+
+.dvHeader2 {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px;
+    padding-left: 100px;
+}
+
+.frmElement2 {
+    text-align: left;
+    width: 180px;
+    vertical-align: top;
+}
+
+.frmElement3 {
+    text-align: left;
+    width: 160px;
+    vertical-align: top;
+}
+
+.frmElement5 {
+    text-align: left;
+    width: 100px;
+    vertical-align: top;
+}
+
+.frmElement4 {
+    text-align: left;
+    width: 250px;
+    vertical-align: top;
+}
+
+.width150 {
+    width: 150px;
+}
+
+/* Menu Boox */
+#menus {
+    height: 25px;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-left: 5px;
+    padding-left: 0px;
+}
+
+
+.menuItem a {
+color: #1876CC;
+font-weight: normal !important;
+text-decoration: none !important;
+font-size: 14px;
+line-height: 16px;
+
+}
+
+.menuItem a:hover {
+color: #1876CC;
+font-weight: normal !important;
+text-decoration: none !important;
+font-size: 14px;
+line-height: 16px;
+
+}
+
+.menuItem a:hover {
+    text-decoration: underline;
+}
+
+.menuItem {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    padding-left: 8px;
+}
+
+.menuItemFirst {
+    padding-left: 0px !important;
+}
+
+.menuItemHoverFirst {
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: center;
+}
+
+.menuItemHover {
+    background-repeat: no-repeat;
+    background-position: left center;
+   /* padding-left: 8px;
+    text-align: center;
+       */
+}
+
+.paddingSmall {
+    padding-top: 5px;
+}
+
+.smallTopPadd {
+    padding-top: 6px;
+}
+
+.uploadExcelDivClass {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.smallTopPadd {
+    margin-top: -5px;
+}
+
+.setPaddingZero {
+    padding: 0px;
+}
+
+.LeftAlignTD {
+    text-align: left;
+    vertical-align: top;
+}
+
+.moreLineHeight2 {
+    font-size: 12px;
+    /*padding: 10px;*/
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+}
+
+.paddingLeft15 {
+    padding-left: 15px;
+}
+
+.paddingLeft20 {
+    padding-left: 20px !important;
+}
+
+.paddingLeft36 {
+    padding-left: 36px;
+}
+
+.paddingLeft40 {
+    padding-left: 40px;
+}
+
+.paddingLeft90 {
+    padding-left: 90px;
+}
+
+.paddingLeft100 {
+    padding-left: 100px;
+}
+
+.paddingLeft110 {
+    padding-left: 110px;
+}
+
+.paddingLeft200 {
+    padding-left: 200px;
+}
+
+.paddingLeft245 {
+    padding-left: 245px;
+}
+
+
+
+.existingCources {
+    line-height: 15px;
+}
+
+.solidBorder {
+    border: 1px solid #999999;
+}
+
+.paddingTop15 {
+    padding-top: 15px;
+}
+
+.defaultPageTableRow {
+    padding-top: 8px;
+    text-align: left;
+}
+
+.footer_logosDiv {
+    padding-left: 60px;
+    text-align: center;
+}
+
+.footer {
+    background-image: url(../images/dotted.png);
+    background-repeat: repeat-x;
+    height: 10px;
+    border-bottom-color: White;
+    border-left-color: White;
+    border-right-color: White;
+    border-top-color: White;
+}
+
+#footer_logosDiv a {
+    text-decoration: none !important;
+    color: White !important;
+    border-bottom-color: White;
+    border-left-color: White;
+    border-right-color: White;
+    border-top-color: White;
+}
+
+#footer_logosDiv img {
+    text-decoration: none !important;
+    color: White !important;
+    border-bottom-color: White;
+    border-left-color: White;
+    border-right-color: White;
+    border-top-color: White;
+}
+
+.mainTable {
+    border: 0px;
+    text-align: center;
+    vertical-align: top;
+    /*padding-left:100px;*/
+}
+
+
+/*.mainWidth
+{
+	width:778px;
+}*/
+
+.AdminHeader {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px;
+    padding-left: 60px;
+}
+
+
+
+.leftmargin {
+    /**margin-left:-40px;*/
+    border: 0px;
+}
+
+.adminloginStatus {
+    text-align: right;
+}
+
+.providerloginStatus {
+    padding-right: 242px;
+    text-align: right;
+}
+
+.searchTableLeftTd {
+    vertical-align: top;
+    text-align: left;
+    padding-right: 10px;
+    line-height: 15px;
+}
+
+.searchTableRightTd {
+    vertical-align: top;
+    text-align: left;
+    line-height: 15px;
+}
+
+.searchMsg {
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: left;
+}
+/*Style for Header/Title of Provider Application page*/
+.APtitle {
+    font-size: 13px;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 0px 0px 0px;
+}
+
+.APsubtext {
+    font-size: 11px;
+    text-align: left;
+    padding: 10px 0px 14px 0px;
+}
+
+.APSubtitle {
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 0px 10px 0px;
+}
+/* Textbox formatting for Provider Application page */
+.APTextbox {
+    padding: 0px;
+    border: 1px solid #999999;
+    width: 150px;
+    margin: 0px 10px 0px 10px;
+}
+
+.APDateField {
+    padding: 0px;
+    border: 1px solid #999999;
+    width: 150px;
+    margin: 0px 0px 0px 10px;
+}
+
+.APDateFieldNoPadding {
+    padding: 0px;
+    border: 1px solid #999999;
+    width: 150px;
+    margin: 0px 0px 0px 0px;
+}
+
+.CalenderIcon {
+    vertical-align: bottom;
+    height: 15px;
+    width: 15px;
+    padding: 0px 10px 0px 3px;
+	box-sizing: content-box;
+}
+
+.APDropdown {
+    padding: 0px;
+    border: 1px solid #999999;
+    margin: 0px 0px 0px 10px;
+}
+
+.APTextarea {
+    padding: 0px;
+    border: 1px solid #999999;
+    width: 95%;
+    vertical-align: top;
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif !important;
+    color: #525252;
+    font-size: 11px;
+    line-height: 13px;
+    min-height: 13px;
+}
+
+div.APTextarea {
+    padding: 4px;
+    margin: 0 0 8px;
+}
+
+.APLabel {
+    padding: 8px 10px 7px 0px;
+    line-height: 15px;
+    vertical-align: top;
+}
+
+.APLabelZeroLeftPad {
+    padding: 8px 10px 7px 0px;
+    line-height: 15px;
+    vertical-align: top;
+}
+
+.APTextboxZeroLeftPad {
+    padding: 0px;
+    border: 1px solid #999999;
+    width: 150px;
+    margin: 0px 10px 0px 00px;
+}
+/* Criteria fields for Provider Application page */
+.APCriteria {
+    padding: 10px 10px 10px 0px;
+    font-style: italic;
+    line-height: 15px;
+}
+/* Agreement for Provider Application page */
+.APAgreement {
+    padding: 10px 10px 10px 0px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+    .APAgreement OL {
+        list-style-type: decimal;
+        font-weight: normal;
+        line-height: 15px;
+    }
+
+.APButton {
+    margin-right: 10px;
+}
+
+.errorTd {
+    color: Red;
+    padding-left: 15px;
+}
+
+.mailTable {
+    /* Specially handle browser */
+    padding-left: 22px;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.txtOrgState {
+    padding-bottom: 5px;
+}
+
+.uploadAttendeeClass {
+    color: #002D80;
+}
+
+/***** ASLA CMS Content start ****/
+
+.aboutLACESIframeClass {
+    border: 0px;
+    position: absolute;
+    top: 100;
+    left: 100;
+    height: 100%;
+    width: 75%;
+}
+
+.padding8 {
+    /*padding:8px;*/
+}
+
+
+.aboutDiv a {
+    color: #0e0f76 !important;
+}
+
+    .aboutDiv a:hover {
+        color: #414282 !important;
+        text-decoration: underline;
+    }
+
+.headImage {
+    border: none;
+}
+
+/***** ASLA CMS Content end ****/
+
+.grayText {
+    color: Gray;
+}
+
+
+
+.Subhead2 {
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 10px 0px 0px;
+}
+
+.smallText {
+    font-size: 11px;
+    line-height: 11px !important;
+}
+
+.tblMPtd2 {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif;
+    /*color: #333333;*/
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.loginAs {
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.width200 {
+    width: 200px;
+}
+
+.width160 {
+    width: 160px;
+}
+
+.subHead {
+    font-size: 12px;
+    font-weight: bold;
+    /*padding-top:10px;
+	padding-bottom:10px;
+*/
+}
+
+.footerPadding {
+    /*padding-top:70px;*/
+    padding-top: 15px;
+    padding-left: 22px;
+}
+
+.footerTextPadding {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.menuSeparator {
+    padding-left: 14px;
+}
+
+.imageCaption {
+    font-size: 9px;
+    line-height: 10px;
+}
+
+.TableHeader {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 1px;
+    padding: 3px 0px 3px 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.smallPadding {
+    padding-bottom: 5px;
+    padding-top: 3px;
+}
+
+.leftPane50 {
+    width: 49%;
+    /*width:50px;*/
+}
+
+    .leftPane50 .tableContainer .defaultPageTableRow {
+        width: 150px;
+    }
+
+.tableContainer .VisitorStrechTxt {
+    width: 300px !important;
+    position: relative;
+}
+
+.smallBoxBorder {
+    border: 1px solid #999999;
+    padding: 5px;
+    
+}
+
+.title3 {
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0px 10px 0px 0px;
+    padding-bottom: 3px;
+}
+
+.smallTopPad4 {
+    padding-top: 4px;
+}
+
+.smallBottomPad {
+    padding-bottom: 9px;
+}
+
+.tableContainer a {
+    font-weight: bold;
+}
+
+#ctl00_lftPane a {
+    font-weight: bold;
+}
+
+.ifNoSpan {
+    vertical-align: 2px;
+}
+
+/*
+#overlay 
+{
+    background:#fff;
+    opacity:0.5;
+    filter: alpha(opacity = 50);
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:none;
+}
+*/
+#searchHelp, .searchHelp {
+    background: #EEEEEE;
+    border: 1px solid #D6D6D6;
+    display: none;
+    left: 28%;
+    padding: 10px 20px 25px;
+    position: fixed;
+    top: 40%;
+    width: 523px;
+    z-index: 999;
+}
+
+.searchHelp {
+    padding: 10px 20px;
+}
+
+    .searchHelp ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .searchHelp ul li {
+            padding: 5px 0;
+        }
+
+    .searchHelp .title {
+        float: left;
+    }
+
+    .searchHelp a {
+        color: #0e0f76;
+        font-weight: bold;
+    }
+
+    .searchHelp .closeBox {
+        position: relative;
+        float: right;
+    }
+
+#closeBox, .closeBox {
+    float: right;
+}
+
+    #closeBox a, .closeBox a {
+        color: #0E0F76;
+        font-weight: bold;
+    }
+
+.searchHelpLink {
+    float: right;
+    font-weight: bold;
+}
+
+.brackets {
+    background: url("../images/brackets.jpg") no-repeat scroll 0 0 transparent;
+    height: 80px;
+    padding: 4px 14px;
+    width: 410px;
+}
+/*uikit site*/
+.fullWidth {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mainContent {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media (max-width: 1040px) {
+    .mainContent {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+a {
+    color: #0e0f76;
+    cursor: pointer;
+    /*font-weight: bold;*/
+    text-decoration: none;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.title2 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom:15px;
+}
+
+body {
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif !important;
+    color: #525252;
+    font-size: 16px;
+    /*background-image: url(/images/LACES-BodyBackgroundImage.jpg);
+    background-repeat: repeat-x;    
+    background-size: contain;*/
+    min-height:117px;
+    margin: 0px;
+    line-height: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.moreLineHeight {
+    line-height: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+input {
+    color: #525252;
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif !important;
+    font-size: 16px !important;
+    line-height: 18px;
+}
+
+select {
+    color: #525252;
+    font-family: Verdana, Georgia, "Times New Roman", Times, serif !important;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.commonButton {
+    border: 0;
+    color: #4b4b4b;
+    cursor: pointer;
+    font-family: Verdana,Georgia,Times New Roman,Times,serif !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    height: 28px;
+    letter-spacing: 0.5px;
+    line-height: 12px;
+}
+
+.basicButton {
+background-color: #fff;
+border: 1px solid #999999;
+color: #4b4b4b;
+cursor: pointer;
+font-family: Verdana,Georgia,Times New Roman,Times,serif !important;
+font-size: 12px !important;
+font-weight: bold;
+letter-spacing: 0.5px;
+line-height: 12px;
+padding: 7px 23px;
+}
+ 
+
+.smallText {
+    font-size: 11px;
+    line-height: 11px !important;
+}
+
+.HomePageEntryFields{
+    margin-top:15px !important;
+}
+
+.downloadSearchFields div{
+    margin-top: 10px !important;
+}
+
+.desktopmenu ul li{
+    display:inline;
+}
+
+.desktopmenu ul
+{
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+.mobiletabs {
+   max-width:468px;
+   margin-left:0 !important;
+   margin-top:30px;
+}
+.mobiletabs div{
+    border: 1px solid #D1E4F5;  
+    padding: 10px;    
+    color:#0077dd;
+    font-weight:bold;
+    font-size: 100%;
+
+}
+@media (max-width: 360px) {
+    .mobiletabs div {
+        font-size: 80%;
+    }
+}
+.mobiletabsph {
+        border-bottom: 1px solid #D1E4F5;
+}
+@media (max-width: 480px) {
+    .mobiletabsph{
+        display:none;
+    }
+}
+
+.activetab{
+    border-bottom:0 !important;
+    color: black !important;
+}
+.entryform div {
+    margin-top: 15px;
+}
+.logoHeader {
+   position: absolute;
+    z-index: 5;
+    top: 0px;    
+}
+@media (max-width: 960px) {
+	
+	.logoHeader{
+	width:100%;
+	}
+    .imageheader {
+		padding-bottom:1px !important;
+	}
+}
+    .header-image {
+        height: calc(100vw * (.09));  
+        max-height: 225px;      
+    }
+    .imageheader {
+        height: calc(100vw * (.09));        
+        max-height: 200px;
+        padding-bottom: 10px;
+    }
+    
+@media (max-width: 1190px) {
+    .mobileSelect{
+        max-height: calc(100vw * (.05));        
+    }
+}
+@media (min-width: 768px){
+    #LeftSide{
+        display: block !important;
+    }
+    #RightSide{
+        display: block !important;
+    }
+    #rssImage {
+        padding-top: 2%;
+    }
+}
+#uiChkHealthSafetyWelfare {
+        padding-top: 2%;
+    }
+.navigation {
+    background-color: #fff;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 10;
+}
+
+.navigation.is-open {
+    display: block;
+}
+.nav__list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+    .nav__item--primary {
+    line-height: 32px;
+    position: relative;
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(24, 118, 204, 0.2); 
+    }    
+        @media (max-width: 1223px) {
+    .nav__item--primary {
+        line-height: 32px;
+        position: relative;
+        margin-left: 10px;
+        border-bottom: 1px solid rgba(24, 118, 204, 0.2); 
+    }
+    .nav__item--primary:hover {
+    line-height: 32px;
+    position: relative;
+    margin-left: 10px;
+    background-color: blue;    	
+    }
+	.nav__item--primary:hover  a{	
+		color: #ffffff !important;
+	}
+}
+.footerlogos div{
+    margin:auto
+}
+.lblForCheckbox{
+    display: block;
+    overflow: auto;
+}
+.cssForCheckbox{
+    float: left;
+    margin-right: 10px;
+}
+@media (max-width: 768px){
+#LeftSide {
+    margin-left: 20px;
+}
+#LeftSide .title{
+	margin-top: 20px;
+}
+#header{
+	margin-top: 20px;
+}
+.logoHeader {
+	margin-top:20px !important;
+}
+.header-overflow{
+	margin-top:20px !important;
+}
+}
+
+.smallBoxBorder div {
+    margin-left:0 !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
+}
+.smallBoxTitle{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom:5px !important;
+}
+.smallBoxLabel {
+    margin-top:15px;
+    margin-bottom:5px;
+}
+.smallBoxBorder input, .smallBoxBorder select{
+        margin-left:10px !important;        
+}
+.smallBoxBorder select option {
+    font-size: 87.5%;
+}
+.menu__toggle {
+    background-color: #ffffff;
+}
+.menu__toggle div{
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    margin: 2px 0;
+}
+.existingCourcesGrid div{
+    margin-top:20px;
+}
+
+.formGrid div{
+    margin-top:20px;
+}
+
+.courseTitleLink{
+    font-weight: bold !important;
+}
+.courseActionLinks{
+    font-weight: normal !important;
+}

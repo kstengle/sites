@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ASLA_Laces_ProdModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LACES_Search_Terms">
+          <Key>
+            <PropertyRef Name="LACES_Search_Terms_id" />
+          </Key>
+          <Property Name="LACES_Search_Terms_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubjectArea" Type="varchar" MaxLength="100" />
+          <Property Name="Location" Type="varchar" MaxLength="100" />
+          <Property Name="DateSearched" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblApprovedProvider">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrganizationName" Type="varchar" MaxLength="200" />
+          <Property Name="OrganizationStreetAddress" Type="varchar" MaxLength="200" />
+          <Property Name="OrganizationCity" Type="varchar" MaxLength="100" />
+          <Property Name="OrganizationState" Type="varchar" MaxLength="100" />
+          <Property Name="OrganizationZip" Type="varchar" MaxLength="15" />
+          <Property Name="OrganizationCountry" Type="varchar" MaxLength="100" />
+          <Property Name="OrganizationPhone" Type="varchar" MaxLength="15" />
+          <Property Name="OrganizationFax" Type="varchar" MaxLength="15" />
+          <Property Name="OrganizationWebSite" Type="varchar" MaxLength="200" />
+          <Property Name="ApplicantName" Type="varchar" MaxLength="100" />
+          <Property Name="ApplicantPosition" Type="varchar" MaxLength="100" />
+          <Property Name="ApplicantPhone" Type="varchar" MaxLength="15" />
+          <Property Name="ApplicantFax" Type="varchar" MaxLength="15" />
+          <Property Name="ApplicantEmail" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="OrganizationNature" Type="text" />
+          <Property Name="LegallyConstituted" Type="bit" />
+          <Property Name="LegallyConstitutedDescription" Type="text" />
+          <Property Name="RegionallyAccredited" Type="bit" />
+          <Property Name="RegionallyAccreditedDescription" Type="text" />
+          <Property Name="ProfessionalAssociation" Type="bit" />
+          <Property Name="FederalOrganization" Type="bit" />
+          <Property Name="StateOrganization" Type="bit" />
+          <Property Name="LocalGovernmentAgency" Type="bit" />
+          <Property Name="OrganizationUnderstandLACES" Type="bit" />
+          <Property Name="CoursesOfferedAsLACES" Type="bit" />
+          <Property Name="AgreeToDesignateCoursesAsLACES" Type="bit" />
+          <Property Name="FollowLACESGuidelines" Type="bit" />
+          <Property Name="AgreeToFollowLACESGuidelines" Type="bit" />
+          <Property Name="HowDeterminesCourses" Type="text" />
+          <Property Name="OrganizedAndSystematicProcess" Type="bit" />
+          <Property Name="DescribeProcedures" Type="text" />
+          <Property Name="WrittenLearningObjectives" Type="int" />
+          <Property Name="DescribeCourse1" Type="text" />
+          <Property Name="DescribeCourse2" Type="text" />
+          <Property Name="AgreeToDevelopWrittenObjectives" Type="bit" />
+          <Property Name="HowDeterminePersonnelDevelopCourses" Type="text" />
+          <Property Name="HowDeterminePersonnelDeliverCourses" Type="text" />
+          <Property Name="EvaluateCoursesToEnsureProgramContent" Type="bit" />
+          <Property Name="ProceduresSurveysEvaluationInstrumentsOrganizationUses" Type="text" />
+          <Property Name="FollowLACESCriteriaToUseOnlyMaterials" Type="bit" />
+          <Property Name="HowOrganizationAssessParticipantAttainment" Type="text" />
+          <Property Name="CoursesEvaluatedByParticipants" Type="int" />
+          <Property Name="EvaluateProgramsInwaysOtherThanByParticipants" Type="int" />
+          <Property Name="ExplainMethodsInwaysOtherThanByParticipants" Type="text" />
+          <Property Name="OrganizationProvideCertificates" Type="bit" />
+          <Property Name="HowOrganizationProvideConfirmation" Type="text" />
+          <Property Name="AgreeToMaintainCompleteAttendanceRecords" Type="bit" />
+          <Property Name="DescribeOrganizationsRecordkeepingSystem" Type="text" />
+          <Property Name="OrganizationHasAnInternalReviewProcess" Type="bit" />
+          <Property Name="DescribeWrittenPolicyOrCriteriaReviewProcess" Type="text" />
+          <Property Name="AgreementOrganizationName" Type="varchar" MaxLength="200" />
+          <Property Name="AuthorizerName" Type="varchar" MaxLength="100" />
+          <Property Name="AuthorizerPosition" Type="varchar" MaxLength="100" />
+          <Property Name="AuthorizerDate" Type="datetime" />
+          <Property Name="AuthorizerPhone" Type="varchar" MaxLength="15" />
+          <Property Name="AuthorizerEmail" Type="varchar" MaxLength="100" />
+          <Property Name="ApplicationSubmissionDate" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ApprovalDate" Type="datetime" />
+          <Property Name="DeferralDate" Type="datetime" />
+          <Property Name="DenialDate" Type="datetime" />
+          <Property Name="ExpirationDate" Type="datetime" />
+          <Property Name="WithdrawalDate" Type="datetime" />
+          <Property Name="NextRenewalDate" Type="datetime" />
+          <Property Name="ShortDescription" Type="text" />
+          <Property Name="LearningOutcome" Type="text" />
+          <Property Name="CourseOutline" Type="text" />
+          <Property Name="DevelopInternalReview" Type="bit" />
+          <Property Name="KeepAllMaterials" Type="bit" />
+          <Property Name="ApplicationReceivedDate" Type="datetime" />
+          <Property Name="CommiteeApprovedDate" Type="datetime" />
+          <Property Name="RenewalDate" Type="datetime" />
+          <Property Name="Payment" Type="varchar" MaxLength="10" />
+          <Property Name="YearMonitored" Type="varchar" MaxLength="50" />
+          <Property Name="Notes" Type="varchar" MaxLength="8000" />
+          <Property Name="isPaymentExempt" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblParticipantCources">
+          <Key>
+            <PropertyRef Name="ParticipantID" />
+            <PropertyRef Name="CourseID" />
+          </Key>
+          <Property Name="ParticipantID" Type="bigint" Nullable="false" />
+          <Property Name="CourseID" Type="bigint" Nullable="false" />
+          <Property Name="DateAdded" Type="datetime" />
+        </EntityType>
+        <Function Name="LACES_VisualizationNewProviders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="LACES_VisualizationSubjectByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="LACES_VisualizationSubjectByLocation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+        </Function>
+        <EntityContainer Name="ASLA_Laces_ProdModelStoreContainer">
+          <EntitySet Name="LACES_Search_Terms" EntityType="Self.LACES_Search_Terms" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblApprovedProvider" EntityType="Self.tblApprovedProvider" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblParticipantCources" EntityType="Self.tblParticipantCources" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ASLA_Laces_ProdModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblApprovedProvider">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrganizationName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationStreetAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationCity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationState" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationZip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationPhone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationFax" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationWebSite" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantPosition" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantPhone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantFax" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrganizationNature" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LegallyConstituted" Type="Boolean" />
+          <Property Name="LegallyConstitutedDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegionallyAccredited" Type="Boolean" />
+          <Property Name="RegionallyAccreditedDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ProfessionalAssociation" Type="Boolean" />
+          <Property Name="FederalOrganization" Type="Boolean" />
+          <Property Name="StateOrganization" Type="Boolean" />
+          <Property Name="LocalGovernmentAgency" Type="Boolean" />
+          <Property Name="OrganizationUnderstandLACES" Type="Boolean" />
+          <Property Name="CoursesOfferedAsLACES" Type="Boolean" />
+          <Property Name="AgreeToDesignateCoursesAsLACES" Type="Boolean" />
+          <Property Name="FollowLACESGuidelines" Type="Boolean" />
+          <Property Name="AgreeToFollowLACESGuidelines" Type="Boolean" />
+          <Property Name="HowDeterminesCourses" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizedAndSystematicProcess" Type="Boolean" />
+          <Property Name="DescribeProcedures" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="WrittenLearningObjectives" Type="Int32" />
+          <Property Name="DescribeCourse1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DescribeCourse2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AgreeToDevelopWrittenObjectives" Type="Boolean" />
+          <Property Name="HowDeterminePersonnelDevelopCourses" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HowDeterminePersonnelDeliverCourses" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EvaluateCoursesToEnsureProgramContent" Type="Boolean" />
+          <Property Name="ProceduresSurveysEvaluationInstrumentsOrganizationUses" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FollowLACESCriteriaToUseOnlyMaterials" Type="Boolean" />
+          <Property Name="HowOrganizationAssessParticipantAttainment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CoursesEvaluatedByParticipants" Type="Int32" />
+          <Property Name="EvaluateProgramsInwaysOtherThanByParticipants" Type="Int32" />
+          <Property Name="ExplainMethodsInwaysOtherThanByParticipants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationProvideCertificates" Type="Boolean" />
+          <Property Name="HowOrganizationProvideConfirmation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AgreeToMaintainCompleteAttendanceRecords" Type="Boolean" />
+          <Property Name="DescribeOrganizationsRecordkeepingSystem" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OrganizationHasAnInternalReviewProcess" Type="Boolean" />
+          <Property Name="DescribeWrittenPolicyOrCriteriaReviewProcess" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AgreementOrganizationName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="AuthorizerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="AuthorizerPosition" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="AuthorizerDate" Type="DateTime" Precision="3" />
+          <Property Name="AuthorizerPhone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="AuthorizerEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicationSubmissionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ApprovalDate" Type="DateTime" Precision="3" />
+          <Property Name="DeferralDate" Type="DateTime" Precision="3" />
+          <Property Name="DenialDate" Type="DateTime" Precision="3" />
+          <Property Name="ExpirationDate" Type="DateTime" Precision="3" />
+          <Property Name="WithdrawalDate" Type="DateTime" Precision="3" />
+          <Property Name="NextRenewalDate" Type="DateTime" Precision="3" />
+          <Property Name="ShortDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LearningOutcome" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CourseOutline" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DevelopInternalReview" Type="Boolean" />
+          <Property Name="KeepAllMaterials" Type="Boolean" />
+          <Property Name="ApplicationReceivedDate" Type="DateTime" Precision="3" />
+          <Property Name="CommiteeApprovedDate" Type="DateTime" Precision="3" />
+          <Property Name="RenewalDate" Type="DateTime" Precision="3" />
+          <Property Name="Payment" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="YearMonitored" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Notes" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="isPaymentExempt" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="ASLA_Laces_ProdEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblApprovedProviders" EntityType="Self.tblApprovedProvider" />
+          <EntitySet Name="LACES_Search_Terms" EntityType="ASLA_Laces_ProdModel.LACES_Search_Terms" />
+          <EntitySet Name="tblParticipantCources" EntityType="ASLA_Laces_ProdModel.tblParticipantCource" />
+          <FunctionImport Name="LACES_VisualizationNewProviders" ReturnType="Collection(ASLA_Laces_ProdModel.LACES_VisualizationNewProviders_Result)">
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="LACES_VisualizationSubjectByDate" ReturnType="Collection(ASLA_Laces_ProdModel.LACES_VisualizationSubjectByDate_Result)">
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="LACES_VisualizationSubjectByLocation" ReturnType="Collection(ASLA_Laces_ProdModel.LACES_VisualizationSubjectByLocation_Result)">
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="LACES_Search_Terms">
+          <Key>
+            <PropertyRef Name="LACES_Search_Terms_id" />
+          </Key>
+          <Property Name="LACES_Search_Terms_id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubjectArea" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DateSearched" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblParticipantCource">
+          <Key>
+            <PropertyRef Name="ParticipantID" />
+            <PropertyRef Name="CourseID" />
+          </Key>
+          <Property Name="ParticipantID" Type="Int64" Nullable="false" />
+          <Property Name="CourseID" Type="Int64" Nullable="false" />
+          <Property Name="DateAdded" Type="DateTime" Precision="3" />
+        </EntityType>
+        <ComplexType Name="LACES_VisualizationNewProviders_Result">
+          <Property Type="Int32" Name="providercount" Nullable="true" />
+          <Property Type="String" Name="Provider_Type" Nullable="false" MaxLength="35" />
+        </ComplexType>
+        <ComplexType Name="LACES_VisualizationSubjectByDate_Result">
+          <Property Type="Int32" Name="subjectcount" Nullable="true" />
+          <Property Type="String" Name="declaration" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="LACES_VisualizationSubjectByLocation_Result">
+          <Property Type="Int32" Name="locationcount" Nullable="true" />
+          <Property Type="String" Name="StateProvince" Nullable="true" MaxLength="2" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ASLA_Laces_ProdModelStoreContainer" CdmEntityContainer="ASLA_Laces_ProdEntities">
+          <EntitySetMapping Name="tblApprovedProviders">
+            <EntityTypeMapping TypeName="ASLA_Laces_ProdModel.tblApprovedProvider">
+              <MappingFragment StoreEntitySet="tblApprovedProvider">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OrganizationName" ColumnName="OrganizationName" />
+                <ScalarProperty Name="OrganizationStreetAddress" ColumnName="OrganizationStreetAddress" />
+                <ScalarProperty Name="OrganizationCity" ColumnName="OrganizationCity" />
+                <ScalarProperty Name="OrganizationState" ColumnName="OrganizationState" />
+                <ScalarProperty Name="OrganizationZip" ColumnName="OrganizationZip" />
+                <ScalarProperty Name="OrganizationCountry" ColumnName="OrganizationCountry" />
+                <ScalarProperty Name="OrganizationPhone" ColumnName="OrganizationPhone" />
+                <ScalarProperty Name="OrganizationFax" ColumnName="OrganizationFax" />
+                <ScalarProperty Name="OrganizationWebSite" ColumnName="OrganizationWebSite" />
+                <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+                <ScalarProperty Name="ApplicantPosition" ColumnName="ApplicantPosition" />
+                <ScalarProperty Name="ApplicantPhone" ColumnName="ApplicantPhone" />
+                <ScalarProperty Name="ApplicantFax" ColumnName="ApplicantFax" />
+                <ScalarProperty Name="ApplicantEmail" ColumnName="ApplicantEmail" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="OrganizationNature" ColumnName="OrganizationNature" />
+                <ScalarProperty Name="LegallyConstituted" ColumnName="LegallyConstituted" />
+                <ScalarProperty Name="LegallyConstitutedDescription" ColumnName="LegallyConstitutedDescription" />
+                <ScalarProperty Name="RegionallyAccredited" ColumnName="RegionallyAccredited" />
+                <ScalarProperty Name="RegionallyAccreditedDescription" ColumnName="RegionallyAccreditedDescription" />
+                <ScalarProperty Name="ProfessionalAssociation" ColumnName="ProfessionalAssociation" />
+                <ScalarProperty Name="FederalOrganization" ColumnName="FederalOrganization" />
+                <ScalarProperty Name="StateOrganization" ColumnName="StateOrganization" />
+                <ScalarProperty Name="LocalGovernmentAgency" ColumnName="LocalGovernmentAgency" />
+                <ScalarProperty Name="OrganizationUnderstandLACES" ColumnName="OrganizationUnderstandLACES" />
+                <ScalarProperty Name="CoursesOfferedAsLACES" ColumnName="CoursesOfferedAsLACES" />
+                <ScalarProperty Name="AgreeToDesignateCoursesAsLACES" ColumnName="AgreeToDesignateCoursesAsLACES" />
+                <ScalarProperty Name="FollowLACESGuidelines" ColumnName="FollowLACESGuidelines" />
+                <ScalarProperty Name="AgreeToFollowLACESGuidelines" ColumnName="AgreeToFollowLACESGuidelines" />
+                <ScalarProperty Name="HowDeterminesCourses" ColumnName="HowDeterminesCourses" />
+                <ScalarProperty Name="OrganizedAndSystematicProcess" ColumnName="OrganizedAndSystematicProcess" />
+                <ScalarProperty Name="DescribeProcedures" ColumnName="DescribeProcedures" />
+                <ScalarProperty Name="WrittenLearningObjectives" ColumnName="WrittenLearningObjectives" />
+                <ScalarProperty Name="DescribeCourse1" ColumnName="DescribeCourse1" />
+                <ScalarProperty Name="DescribeCourse2" ColumnName="DescribeCourse2" />
+                <ScalarProperty Name="AgreeToDevelopWrittenObjectives" ColumnName="AgreeToDevelopWrittenObjectives" />
+                <ScalarProperty Name="HowDeterminePersonnelDevelopCourses" ColumnName="HowDeterminePersonnelDevelopCourses" />
+                <ScalarProperty Name="HowDeterminePersonnelDeliverCourses" ColumnName="HowDeterminePersonnelDeliverCourses" />
+                <ScalarProperty Name="EvaluateCoursesToEnsureProgramContent" ColumnName="EvaluateCoursesToEnsureProgramContent" />
+                <ScalarProperty Name="ProceduresSurveysEvaluationInstrumentsOrganizationUses" ColumnName="ProceduresSurveysEvaluationInstrumentsOrganizationUses" />
+                <ScalarProperty Name="FollowLACESCriteriaToUseOnlyMaterials" ColumnName="FollowLACESCriteriaToUseOnlyMaterials" />
+                <ScalarProperty Name="HowOrganizationAssessParticipantAttainment" ColumnName="HowOrganizationAssessParticipantAttainment" />
+                <ScalarProperty Name="CoursesEvaluatedByParticipants" ColumnName="CoursesEvaluatedByParticipants" />
+                <ScalarProperty Name="EvaluateProgramsInwaysOtherThanByParticipants" ColumnName="EvaluateProgramsInwaysOtherThanByParticipants" />
+                <ScalarProperty Name="ExplainMethodsInwaysOtherThanByParticipants" ColumnName="ExplainMethodsInwaysOtherThanByParticipants" />
+                <ScalarProperty Name="OrganizationProvideCertificates" ColumnName="OrganizationProvideCertificates" />
+                <ScalarProperty Name="HowOrganizationProvideConfirmation" ColumnName="HowOrganizationProvideConfirmation" />
+                <ScalarProperty Name="AgreeToMaintainCompleteAttendanceRecords" ColumnName="AgreeToMaintainCompleteAttendanceRecords" />
+                <ScalarProperty Name="DescribeOrganizationsRecordkeepingSystem" ColumnName="DescribeOrganizationsRecordkeepingSystem" />
+                <ScalarProperty Name="OrganizationHasAnInternalReviewProcess" ColumnName="OrganizationHasAnInternalReviewProcess" />
+                <ScalarProperty Name="DescribeWrittenPolicyOrCriteriaReviewProcess" ColumnName="DescribeWrittenPolicyOrCriteriaReviewProcess" />
+                <ScalarProperty Name="AgreementOrganizationName" ColumnName="AgreementOrganizationName" />
+                <ScalarProperty Name="AuthorizerName" ColumnName="AuthorizerName" />
+                <ScalarProperty Name="AuthorizerPosition" ColumnName="AuthorizerPosition" />
+                <ScalarProperty Name="AuthorizerDate" ColumnName="AuthorizerDate" />
+                <ScalarProperty Name="AuthorizerPhone" ColumnName="AuthorizerPhone" />
+                <ScalarProperty Name="AuthorizerEmail" ColumnName="AuthorizerEmail" />
+                <ScalarProperty Name="ApplicationSubmissionDate" ColumnName="ApplicationSubmissionDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+                <ScalarProperty Name="DeferralDate" ColumnName="DeferralDate" />
+                <ScalarProperty Name="DenialDate" ColumnName="DenialDate" />
+                <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+                <ScalarProperty Name="WithdrawalDate" ColumnName="WithdrawalDate" />
+                <ScalarProperty Name="NextRenewalDate" ColumnName="NextRenewalDate" />
+                <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+                <ScalarProperty Name="LearningOutcome" ColumnName="LearningOutcome" />
+                <ScalarProperty Name="CourseOutline" ColumnName="CourseOutline" />
+                <ScalarProperty Name="DevelopInternalReview" ColumnName="DevelopInternalReview" />
+                <ScalarProperty Name="KeepAllMaterials" ColumnName="KeepAllMaterials" />
+                <ScalarProperty Name="ApplicationReceivedDate" ColumnName="ApplicationReceivedDate" />
+                <ScalarProperty Name="CommiteeApprovedDate" ColumnName="CommiteeApprovedDate" />
+                <ScalarProperty Name="RenewalDate" ColumnName="RenewalDate" />
+                <ScalarProperty Name="Payment" ColumnName="Payment" />
+                <ScalarProperty Name="YearMonitored" ColumnName="YearMonitored" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="isPaymentExempt" ColumnName="isPaymentExempt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LACES_Search_Terms">
+            <EntityTypeMapping TypeName="ASLA_Laces_ProdModel.LACES_Search_Terms">
+              <MappingFragment StoreEntitySet="LACES_Search_Terms">
+                <ScalarProperty Name="DateSearched" ColumnName="DateSearched" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="SubjectArea" ColumnName="SubjectArea" />
+                <ScalarProperty Name="LACES_Search_Terms_id" ColumnName="LACES_Search_Terms_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblParticipantCources">
+            <EntityTypeMapping TypeName="ASLA_Laces_ProdModel.tblParticipantCource">
+              <MappingFragment StoreEntitySet="tblParticipantCources">
+                <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="LACES_VisualizationNewProviders" FunctionName="ASLA_Laces_ProdModel.Store.LACES_VisualizationNewProviders">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ASLA_Laces_ProdModel.LACES_VisualizationNewProviders_Result">
+                <ScalarProperty Name="providercount" ColumnName="providercount" />
+                <ScalarProperty Name="Provider_Type" ColumnName="Provider Type" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="LACES_VisualizationSubjectByDate" FunctionName="ASLA_Laces_ProdModel.Store.LACES_VisualizationSubjectByDate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ASLA_Laces_ProdModel.LACES_VisualizationSubjectByDate_Result">
+                <ScalarProperty Name="subjectcount" ColumnName="subjectcount" />
+                <ScalarProperty Name="declaration" ColumnName="declaration" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="LACES_VisualizationSubjectByLocation" FunctionName="ASLA_Laces_ProdModel.Store.LACES_VisualizationSubjectByLocation">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ASLA_Laces_ProdModel.LACES_VisualizationSubjectByLocation_Result">
+                <ScalarProperty Name="locationcount" ColumnName="locationcount" />
+                <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

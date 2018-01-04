@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="IsVaildUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsVaildUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsVaildUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IsVaildUserSoapIn">
+    <wsdl:part name="parameters" element="tns:IsVaildUser" />
+  </wsdl:message>
+  <wsdl:message name="IsVaildUserSoapOut">
+    <wsdl:part name="parameters" element="tns:IsVaildUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsVaildUserHttpGetIn">
+    <wsdl:part name="userName" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsVaildUserHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IsVaildUserHttpPostIn">
+    <wsdl:part name="userName" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsVaildUserHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="AuthenticationServiceSoap">
+    <wsdl:operation name="IsVaildUser">
+      <wsdl:input message="tns:IsVaildUserSoapIn" />
+      <wsdl:output message="tns:IsVaildUserSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AuthenticationServiceHttpGet">
+    <wsdl:operation name="IsVaildUser">
+      <wsdl:input message="tns:IsVaildUserHttpGetIn" />
+      <wsdl:output message="tns:IsVaildUserHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AuthenticationServiceHttpPost">
+    <wsdl:operation name="IsVaildUser">
+      <wsdl:input message="tns:IsVaildUserHttpPostIn" />
+      <wsdl:output message="tns:IsVaildUserHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AuthenticationServiceSoap" type="tns:AuthenticationServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsVaildUser">
+      <soap:operation soapAction="http://tempuri.org/IsVaildUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AuthenticationServiceSoap12" type="tns:AuthenticationServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsVaildUser">
+      <soap12:operation soapAction="http://tempuri.org/IsVaildUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AuthenticationServiceHttpGet" type="tns:AuthenticationServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="IsVaildUser">
+      <http:operation location="/IsVaildUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AuthenticationServiceHttpPost" type="tns:AuthenticationServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="IsVaildUser">
+      <http:operation location="/IsVaildUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuthenticationService">
+    <wsdl:port name="AuthenticationServiceSoap" binding="tns:AuthenticationServiceSoap">
+      <soap:address location="http://asla-responsive.dev01.1over0.com/webservice/Authenticationservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AuthenticationServiceSoap12" binding="tns:AuthenticationServiceSoap12">
+      <soap12:address location="http://asla-responsive.dev01.1over0.com/webservice/Authenticationservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AuthenticationServiceHttpGet" binding="tns:AuthenticationServiceHttpGet">
+      <http:address location="http://asla-responsive.dev01.1over0.com/webservice/Authenticationservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AuthenticationServiceHttpPost" binding="tns:AuthenticationServiceHttpPost">
+      <http:address location="http://asla-responsive.dev01.1over0.com/webservice/Authenticationservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

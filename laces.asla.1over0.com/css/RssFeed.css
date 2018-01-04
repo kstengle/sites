@@ -1,0 +1,11 @@
+﻿
+    .dvHeader {
+	font-family:Verdana, Georgia, "Times New Roman", Times, serif;
+	color: #333333;
+	/*text-align: right;*/
+	text-align:left;
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 8px;
+}
+

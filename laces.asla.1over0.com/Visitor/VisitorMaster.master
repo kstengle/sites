@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="VisitorMaster.master.cs"
+    Inherits="VisitorMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/usercontrols/Footer.ascx" TagName="Footer" TagPrefix="UC1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>LA CES™</title>
+    <!--Common css-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/inputs.css" />
+    <!--For Smart Calendar-->
+    <link rel="stylesheet" type="text/css" href="../smartCalendar/smartCalendar.css" />
+	<script type="text/javascript" language="javascript" src="../javascript/jquery-1.4.2.js"></script>
+    <script type="text/javascript" language="javascript" src="../javascript/jqscripts.js"></script>
+    <script type="text/javascript" language="javascript" src="/laces/smartCalendar/smartCalendar.js"></script>
+
+    <!--Common Javascripts-->
+    <script type="text/javascript" language="javascript" src="/laces/javascript/common.js"></script>
+</head>
+<body>
+<div id="searchHelp"><div id="closeBox"><a href="javascript:void(0)">Close X</a></div><div class="title">Search Help</div><div class="VisitorStrechTxt">To select more than one educational provider, hold down the Control (or Mac Apple) key and select multiple options.<br /><br />To deselect an option, hold down the Control (or Mac Apple) key and left-click mouse.</div></div>
+    <!--Start Form Tag-->
+    <form id="form1" runat="server">
+        <table width="690" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <!--Main Header Image-->
+                        <img alt="LA CES™ - Landscape Architecture Continuing Education System™"
+                            title="LA CES™ - Landscape Architecture Continuing Education System™"
+                            src="/laces/images/logo/LACES-LogoHeader.png" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img width="10" height="10" src="/laces/images/shim.gif" /></td>
+                </tr>
+                <tr>
+                   <td id="tdMenu" runat="server">
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Start Main Table-->
+        <table class="mainWidth" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="3">
+                                <img src="/laces/images/shim.gif" alt="" height="10" /></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <%--<img src="/laces/images/shim.gif" alt="" />--%></td>
+                            <td valign="top" class="redLineVert">
+                                <%--<img src="/laces/images/VertCurveTop.gif" width="15" height="9" alt="" />--%></td>
+                            <td valign="top">
+                                <%--<img src="/laces/images/RedLine_Right.jpg" width="90" height="1" alt="" />--%></td>
+                        </tr>
+                        <tr>
+                            <td valign="top" runat="server" id="lftPane" class="leftPane50">
+                                <!--Left Content Place Holder-->
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolderLeftPane" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td valign="top" class="redLineVert">
+                                <%--<img src="/laces/images/RedLine_Vert.gif" alt="" />--%></td>
+                            <td valign="top" runat="server" id="rgtPane" class="rightPane50">
+                                <!--Right Content Place Holder-->
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolderRightane" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="bottom">
+                                <%--<img src="/laces/images/RedLine_Left.jpg" width="90" height="1" alt="" />--%></td>
+                            <td width="1%" valign="bottom" class="redLineVert">
+                                <%--<img src="/laces/images/VertCurveBot.gif" width="15" height="9" alt="" />--%></td>
+                            <td>
+                                <%--<img src="/laces/images/shim.gif" alt="" />--%></td>
+                        </tr>
+                    </table>
+                    <!--Bottom Content Place Holder-->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderBottomPane" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <!--End Main Table-->
+        <UC1:Footer ID="Footer1" runat="server" />
+    </form>
+    <!--End Form Tag-->
+    <!--Start noscript tag working when javascript disabled-->
+    <noscript>
+        <div id="theLayer1" class="theLayer1" onclick="return false" onmousedown="return false"
+            onmousemove="return false" onmouseup="return false" ondblclick="return false"
+            style="visibility: visible; height: 1000px; width: 1000px;">
+            &nbsp; &nbsp;
+        </div>
+        <div id="theLayer" style="visibility: visible; background-color: #FFFFFF;">
+            <br />
+            <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>
+                        <!--Display notification image-->
+                        <img src="/laces/images/alert.jpg" alt="Alert" title="Alert" /></td>
+                    <td>
+                        <strong>Attention!!</strong><br />
+                        <br />
+                        This site uses Javascript which your browser is not supporting. You must enable
+                        Javascript or use a browser that supports Javascript to browse this site.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </noscript>
+    <!--End noscript tag working when javascript disabled-->
+
+    <!--Google Analytics Start-->
+   <script type="text/javascript">
+       (function (i, s, o, g, r, a, m) {
+           i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+               (i[r].q = i[r].q || []).push(arguments)
+           }, i[r].l = 1 * new Date(); a = s.createElement(o),
+           m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+       })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+       ga('create', 'UA-4677685-1', 'auto');
+       ga('send', 'pageview');
+
+</script>
+    <!--Google Analytics End-->    
+</body>
+</html>

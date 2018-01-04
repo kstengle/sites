@@ -1,0 +1,58 @@
+/* Genearal check box and radio input field class */
+.checkbox, .radio {
+	height: 21px;
+	margin: 0 0 3px;
+	padding: 0 0 0 25px;
+	background: #000 url("../images/checkbox.gif") no-repeat 0 0;
+	cursor: default;
+}
+/* Genearal check box and radio input field hide class */
+.checkbox input, .radio input {
+	display: none;
+}
+/* Radio button image */
+.radio {
+	background: #000 url("radio.gif") no-repeat 0 0;
+}
+/* Selected radio button class */
+.selected {
+	background-position: 0 -52px;
+}
+/* Input block class */
+
+.block {
+	width: 50%;
+	float: left;
+}
+/*
+label {
+	color: #000;
+	font: 1.2em/21px arial,sans-serif;
+	display: inline;
+}
+*/
+/* Input display class */
+.checkbox input.show, .radio input.show {
+	display: inline;
+}
+/* check box class with right align text */
+.CheckboxList
+{
+	text-align:right;	
+}
+/* Check box level */
+.CheckboxList label {
+	color:#333333;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:12px;
+	letter-spacing:0.5px;
+	line-height:150%;
+}
+/* Check box level */
+.singlecheckbox label {
+	color:#333333;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:12px;
+	letter-spacing:0.5px;
+	line-height:150%;
+}
